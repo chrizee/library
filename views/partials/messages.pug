@@ -1,0 +1,20 @@
+if errors 
+  for error in errors
+    div.alert.alert-warning.alert-dismissible.show(role="alert")= error.msg 
+      button.close(type="button" data-dismiss="alert" aria-label="Close")
+        span(aria-hidden="true") &times;
+
+if success_msg != ''
+  div.alert.alert-success.alert-dismissible.show(role="alert")= success_msg 
+    button.close(type="button" data-dismiss="alert" aria-label="Close")
+      span(aria-hidden="true") &times;
+
+if error_msg != ''
+  div.alert.alert-warning.alert-dismissible.show(role="alert")= error_msg 
+    button.close(type="button" data-dismiss="alert" aria-label="Close")
+      span(aria-hidden="true") &times;
+
+if error != ''
+  div.alert.alert-warning.alert-dismissible.show(role="alert")= error
+    button.close(type="button" data-dismiss="alert" aria-label="Close")
+      span(aria-hidden="true") &times;

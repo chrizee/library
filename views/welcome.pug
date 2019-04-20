@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.6.3/css/all.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='https://bootswatch.com/4/journal/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div(class='container')
+      div(class='row')
+        div.row.mt-5
+          div.col-md-6.col-md-offset-3
+              div.card.card-body.text-center
+                  h1
+                      i.fab.fa-node-js.fa-3x
+                  p Create an account or login
+                  a.btn.btn-primary.btn-block.mb-2(href="/users/register") Register
+                  a.btn.btn-danger.btn-block(href="/users/login") Login
